@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/pageReservation"
+        android:title="Reservation"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:checked="true"
+        android:icon="@drawable/calendar" />
+
+    <item
+        android:id="@+id/pageFriends"
+        android:title="Friends"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:checked="true"
+        android:icon="@drawable/friend"/>
+
+    <item
+        android:id="@+id/pageSettings"
+        android:title="Settings"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:checked="true"
+        android:icon="@drawable/setting"/>
+</menu>
