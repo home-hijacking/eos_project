@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp"
+    android:layout_marginTop="30dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginBottom="15dp"
+    >
+
+    <EditText
+        android:id="@+id/signUpID"
+        android:layout_width="240dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/edit_text_layout"/>
+
+
+    <EditText
+        android:id="@+id/signUpEmail"
+        android:layout_width="240dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpID"
+        android:layout_margin="10dp"
+        android:background="@drawable/edit_text_layout"/>
+
+    <EditText
+        android:id="@+id/signUpPassword"
+        android:layout_width="240dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpEmail"
+        android:layout_margin="10dp"
+        android:background="@drawable/edit_text_layout"/>
+
+    <EditText
+        android:id="@+id/signUpName"
+        android:layout_width="240dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpPassword"
+        android:layout_margin="10dp"
+        android:background="@drawable/edit_text_layout"/>
+
+    <EditText
+        android:id="@+id/signUpNickname"
+        android:layout_width="240dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpName"
+        android:layout_margin="10dp"
+        android:background="@drawable/edit_text_layout"/>
+
+    <EditText
+        android:id="@+id/signUpPhone"
+        android:layout_width="240dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpNickname"
+        android:layout_margin="10dp"
+        android:background="@drawable/edit_text_layout"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="240dp"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpPhone"
+        android:layout_margin="10dp">
+
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginStart="35dp"
+            android:text="호스트"
+            tools:layout_editor_absoluteX="91dp"
+            tools:layout_editor_absoluteY="512dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginStart="35dp"
+            android:text="게스트"
+            tools:layout_editor_absoluteX="204dp"
+            tools:layout_editor_absoluteY="520dp" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/signUpAddress"
+        android:layout_width="240dp"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/signUpBtSignUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.0"
+        android:background="@drawable/edit_text_layout"/>
+
+    <TextView
+        android:id="@+id/signUpTvID"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="아이디"
+        app:layout_constraintEnd_toStartOf="@+id/signUpID"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/signUpTvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="이메일"
+        app:layout_constraintEnd_toStartOf="@+id/signUpEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpTvID"
+
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/signUpTvPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="비밀번호"
+        app:layout_constraintEnd_toStartOf="@+id/signUpPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpTvEmail"
+
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/signUpTvName"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="이름"
+        app:layout_constraintEnd_toStartOf="@+id/signUpName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpTvPassword"
+
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/signUpTvNickname"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="별명"
+        app:layout_constraintEnd_toStartOf="@+id/signUpNickname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpTvName"
+
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/signUpTvPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="전화번호"
+        app:layout_constraintEnd_toStartOf="@+id/signUpPhone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpTvNickname"
+
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/signUpTvHost"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="호스트"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpTvPhone"
+
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/signUpTvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="주소"
+        app:layout_constraintBottom_toTopOf="@+id/signUpBtSignUp"
+        app:layout_constraintEnd_toStartOf="@+id/signUpAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpTvHost"
+
+        app:layout_constraintVertical_bias="0.0"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/signUpBtSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

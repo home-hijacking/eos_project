@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RoomInfo">
+
+
+
+    <ImageView
+        android:id="@+id/ivRoom"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/one_room" />
+
+    <TextView
+        android:id="@+id/tvRoomName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="000의 방"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivRoom"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tvRoomAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주소"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRoomName"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tvRoomMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="최대인원"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRoomAddress"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tvRoomMemo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주인의 메모"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRoomMax"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/tvRoomMemoContext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="메모 내용"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRoomMemo"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/tvRoomEnd"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/edit_text_layout"
+        android:gravity="center"
+        android:hint="끝 날짜"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvRoomStart"
+        app:layout_constraintTop_toBottomOf="@+id/tvRoomMemoContext"
+        app:layout_constraintBottom_toBottomOf="@id/btRoomReserve"
+        />
+
+    <TextView
+        android:id="@+id/tvRoomStart"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/edit_text_layout"
+        android:gravity="center"
+        android:hint="시작 날짜"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/tvRoomEnd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRoomMemoContext"
+        app:layout_constraintBottom_toBottomOf="@id/btRoomReserve"
+        />
+    <Button
+        android:id="@+id/btRoomReserve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="예약하기"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRoomStart" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

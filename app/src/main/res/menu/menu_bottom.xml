@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/reservation"
+        android:title="Reserve"
+        android:icon="@drawable/ic_baseline_date_range_24"
+        android:enabled="true"
+        android:checked="true" >
+    </item>
+
+    <item
+        android:id="@+id/friend"
+        android:title="Friends"
+        android:icon="@drawable/ic_baseline_people_24"
+        android:enabled="true">
+    </item>
+
+    <item
+        android:id="@+id/setting"
+        android:title="Setting"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:enabled="true">
+    </item>
+</menu>
