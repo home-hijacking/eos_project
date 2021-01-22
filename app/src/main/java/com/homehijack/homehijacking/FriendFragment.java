@@ -54,9 +54,30 @@ public class FriendFragment extends Fragment {
             @Override
             public void onItemClick(View v, int position) {
                 //TODO: 클릭했을시 방정보 acticity 뜨도록
-
                 Intent intent = new Intent(getActivity(), RoomInfo.class);
+
+                if(position == 0){
+                    intent.putExtra("name", "윤건우");
+                    intent.putExtra("address", "윤건우 주소");
+                    intent.putExtra("max", 5);
+                    intent.putExtra("memo", "메모");
+                }else if(position == 1){
+                    intent.putExtra("name", "유석원");
+                    intent.putExtra("address", "유석원 주소");
+                    intent.putExtra("max", 4);
+                    intent.putExtra("memo", "메모");
+                }
+                else if(position == 2){
+                    intent.putExtra("name", "윤무원");
+                    intent.putExtra("address", "윤무원 주소");
+                    intent.putExtra("max", 6);
+                    intent.putExtra("memo", "메모");
+                }
                 startActivity(intent);
+
+
+
+
 
 //                list.add(new Friend("윤건우", "알아서 뭐해", "xxxx@gmail.com", true));
 //                friendAdapter.notifyDataSetChanged();

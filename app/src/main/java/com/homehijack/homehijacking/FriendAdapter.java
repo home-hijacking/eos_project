@@ -61,6 +61,7 @@ public class FriendAdapter extends RecyclerView.Adapter<FriendAdapter.Holder> {
         return list.size();
     }
 
+
     public class Holder extends RecyclerView.ViewHolder {
         private TextView tvName;
         private TextView tvAddress;

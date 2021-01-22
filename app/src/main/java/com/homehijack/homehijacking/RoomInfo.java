@@ -16,16 +16,41 @@ import java.util.Calendar;
 
 public class RoomInfo extends AppCompatActivity {
 
+    private TextView tvName;
+    private TextView tvAddress;
+    private TextView tvMax;
+    private TextView tvMemo;
+
     private TextView tvStart;
     private TextView tvEnd;
+
     private final int START = 0;
     private final int END = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_room_info);
+
+        tvName = (TextView) findViewById(R.id.tvRoomName);
+        tvAddress = (TextView) findViewById(R.id.tvRoomAddress);
+        tvMax = (TextView) findViewById(R.id.tvRoomMax);
+        tvMemo = (TextView) findViewById(R.id.tvRoomMemoContext);
+
+        Intent intent = getIntent();
+
+        String name = intent.getStringExtra("name");
+        String address = intent.getStringExtra("address");
+        int max = intent.getIntExtra("max", 0);
+        String memo = intent.getStringExtra("memo");
+
+        tvName.setText(name + "의 방");
+        tvAddress.setText(address);
+        tvMax.setText("최대 인원 : " + max);
+        tvMemo.setText(memo);
+
+
+
         tvStart = (TextView) findViewById(R.id.tvRoomStart);
         tvEnd = (TextView) findViewById(R.id.tvRoomEnd);
 
